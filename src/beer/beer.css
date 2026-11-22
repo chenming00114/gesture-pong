@@ -1,0 +1,11 @@
+html, body { background: #120c18; }
+#cupbar { position: absolute; left: 0; right: 0; bottom: calc(env(safe-area-inset-bottom) + 104px); display: flex; justify-content: center; gap: 16px; align-items: center; font-size: 15px; font-weight: 700; text-shadow: 0 2px 6px #000; }
+#cupbar .opp b { color: #ff6b6b; font-size: 22px; } #cupbar .mine b { color: #6fa8ff; font-size: 22px; }
+#balls { letter-spacing: 3px; color: #fff; }
+#previewWrap { position: fixed; right: 8px; top: calc(env(safe-area-inset-top) + 8px); width: 120px; pointer-events: none; }
+#previewWrap #preview { position: relative; right: auto; top: auto; width: 100%; }
+#pinchBadge { margin-top: 4px; text-align: center; font: 700 13px system-ui; background: #0009; border-radius: 10px; padding: 2px 0; }
+#pinchBadge.on { background: #1f9d4ccc; }
+#start { background: radial-gradient(#3a1830, #0a060c); }
+#btnStart { background: #ff5a5f; color: #fff; }
+#handLost { top: 64px; }

@@ -1,2 +1,7 @@
 import { defineConfig } from 'vite';
-export default defineConfig({ base: './', build: { target: 'es2020', chunkSizeWarningLimit: 2000 } });
+import { resolve } from 'node:path';
+export default defineConfig({
+  base: './',
+  build: { target: 'es2020', chunkSizeWarningLimit: 2000,
+    rollupOptions: { input: { main: resolve(__dirname, 'index.html'), pong: resolve(__dirname, 'pong.html') } } },
+});
