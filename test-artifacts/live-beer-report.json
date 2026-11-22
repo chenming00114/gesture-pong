@@ -1,0 +1,358 @@
+{
+  "base": "https://chenming00114.github.io/gesture-pong/",
+  "y4m": "none",
+  "injectedThrow": {
+    "phases": [
+      {
+        "i": 0,
+        "phase": "open",
+        "pinched": false,
+        "holding": null,
+        "ratio": 1.02,
+        "held": null,
+        "state": "aim",
+        "thrown": false
+      },
+      {
+        "i": 12,
+        "phase": "pinching",
+        "pinched": false,
+        "holding": null,
+        "ratio": 0.825,
+        "held": null,
+        "state": "aim",
+        "thrown": false
+      },
+      {
+        "i": 17,
+        "phase": "holding",
+        "pinched": true,
+        "holding": "hand",
+        "ratio": 0.045,
+        "held": {
+          "x": 0.009,
+          "y": 0.546,
+          "z": 1.127
+        },
+        "state": "aim",
+        "thrown": false
+      },
+      {
+        "i": 23,
+        "phase": "pullback",
+        "pinched": true,
+        "holding": "hand",
+        "ratio": 0.045,
+        "held": {
+          "x": 0.008,
+          "y": 0.541,
+          "z": 1.13
+        },
+        "state": "aim",
+        "thrown": false
+      },
+      {
+        "i": 35,
+        "phase": "flick",
+        "pinched": true,
+        "holding": "hand",
+        "ratio": 0.045,
+        "held": {
+          "x": 0.009,
+          "y": 0.461,
+          "z": 1.169
+        },
+        "state": "aim",
+        "thrown": false
+      },
+      {
+        "i": 40,
+        "phase": "release",
+        "pinched": false,
+        "holding": null,
+        "ratio": 0.63,
+        "held": null,
+        "state": "flight",
+        "thrown": true
+      },
+      {
+        "i": 42,
+        "phase": "open-after",
+        "pinched": false,
+        "holding": null,
+        "ratio": 1.02,
+        "held": null,
+        "state": "flight",
+        "thrown": true
+      }
+    ],
+    "lastThrow": {
+      "source": "hand",
+      "rawSpeed": 4.01,
+      "assistCup": "far6",
+      "sUp": 2.86,
+      "vxImg": -0.16,
+      "speed": 4.02,
+      "v": {
+        "x": 0.08,
+        "y": 2.84,
+        "z": -2.84
+      },
+      "from": {
+        "x": 0.028440315143754304,
+        "y": 0.7112743305747824,
+        "z": 1.0499999999999998
+      }
+    }
+  },
+  "injectedResult": [
+    {
+      "type": "made",
+      "by": "player",
+      "cup": "far6"
+    }
+  ],
+  "afterInjected": {
+    "state": "aim",
+    "turn": "player",
+    "ballsLeft": 1,
+    "farAlive": 9,
+    "nearAlive": 10,
+    "holding": null,
+    "pinched": false,
+    "pinchRatio": 1.02,
+    "hand": false,
+    "gesture": "no hand",
+    "delegate": "GPU",
+    "fps": 5.3,
+    "lat": 189,
+    "ball": {
+      "x": 0.088,
+      "y": 0.087,
+      "z": -1.069
+    },
+    "lastThrow": {
+      "source": "hand",
+      "rawSpeed": 4.01,
+      "assistCup": "far6",
+      "sUp": 2.86,
+      "vxImg": -0.16,
+      "speed": 4.02,
+      "v": {
+        "x": 0.08,
+        "y": 2.84,
+        "z": -2.84
+      },
+      "from": {
+        "x": 0.028440315143754304,
+        "y": 0.7112743305747824,
+        "z": 1.0499999999999998
+      }
+    },
+    "errors": []
+  },
+  "scripted": {
+    "cup": "far9",
+    "v": {
+      "x": 0,
+      "y": 2.9080771921986033,
+      "z": -2.9080771921986037,
+      "speed": 4.112642205635135
+    },
+    "cupsBefore": 9,
+    "cupsAfter": 8
+  },
+  "afterScripted": {
+    "state": "ai-wait",
+    "turn": "ai",
+    "ballsLeft": 2,
+    "farAlive": 8,
+    "nearAlive": 10,
+    "holding": null,
+    "pinched": false,
+    "pinchRatio": 1.02,
+    "hand": false,
+    "gesture": "no hand",
+    "delegate": "GPU",
+    "fps": 6.3,
+    "lat": 165,
+    "ball": {
+      "x": 0,
+      "y": 0.084,
+      "z": -0.91
+    },
+    "lastThrow": {
+      "source": "hand",
+      "rawSpeed": 4.01,
+      "assistCup": "far6",
+      "sUp": 2.86,
+      "vxImg": -0.16,
+      "speed": 4.02,
+      "v": {
+        "x": 0.08,
+        "y": 2.84,
+        "z": -2.84
+      },
+      "from": {
+        "x": 0.028440315143754304,
+        "y": 0.7112743305747824,
+        "z": 1.0499999999999998
+      }
+    },
+    "errors": []
+  },
+  "afterAI": {
+    "state": "aim",
+    "turn": "player",
+    "ballsLeft": 2,
+    "farAlive": 8,
+    "nearAlive": 10,
+    "holding": null,
+    "pinched": false,
+    "pinchRatio": 1.02,
+    "hand": false,
+    "gesture": "no hand",
+    "delegate": "GPU",
+    "fps": 5.1,
+    "lat": 173,
+    "ball": {
+      "x": 0.887,
+      "y": -0.413,
+      "z": -0.324
+    },
+    "lastThrow": {
+      "source": "hand",
+      "rawSpeed": 4.01,
+      "assistCup": "far6",
+      "sUp": 2.86,
+      "vxImg": -0.16,
+      "speed": 4.02,
+      "v": {
+        "x": 0.08,
+        "y": 2.84,
+        "z": -2.84
+      },
+      "from": {
+        "x": 0.028440315143754304,
+        "y": 0.7112743305747824,
+        "z": 1.0499999999999998
+      }
+    },
+    "errors": []
+  },
+  "events": [
+    "player throw v=(0.08,2.84,-2.84)",
+    "player made far6",
+    "player throw v=(0.00,2.91,-2.91)",
+    "player made far9",
+    "ai throw v=(0.39,3.74,3.12)",
+    "ai miss (away)",
+    "ai throw v=(-0.01,3.51,2.94)",
+    "ai miss (floor)"
+  ],
+  "touchThrow": {
+    "source": "touch",
+    "rawSpeed": 3.28,
+    "assistCup": "far8",
+    "sUp": 2.34,
+    "vxImg": -0.17,
+    "speed": 3.79,
+    "v": {
+      "x": 0.05,
+      "y": 2.68,
+      "z": -2.68
+    },
+    "from": {
+      "x": 0.015291262135922322,
+      "y": 0.6428837209302325,
+      "z": 1.0785581395348836
+    }
+  },
+  "touchLog": [
+    {
+      "throw": {
+        "source": "hand",
+        "rawSpeed": 4.01,
+        "assistCup": "far6",
+        "sUp": 2.86,
+        "vxImg": -0.16,
+        "speed": 4.02,
+        "v": {
+          "x": 0.08,
+          "y": 2.84,
+          "z": -2.84
+        },
+        "from": {
+          "x": 0.028440315143754304,
+          "y": 0.7112743305747824,
+          "z": 1.0499999999999998
+        }
+      }
+    },
+    {
+      "throw": {
+        "source": "touch",
+        "rawSpeed": 3.28,
+        "assistCup": "far8",
+        "sUp": 2.34,
+        "vxImg": -0.17,
+        "speed": 3.79,
+        "v": {
+          "x": 0.05,
+          "y": 2.68,
+          "z": -2.68
+        },
+        "from": {
+          "x": 0.015291262135922322,
+          "y": 0.6428837209302325,
+          "z": 1.0785581395348836
+        }
+      }
+    }
+  ],
+  "final": {
+    "state": "flight",
+    "turn": "player",
+    "ballsLeft": 2,
+    "farAlive": 8,
+    "nearAlive": 10,
+    "holding": null,
+    "pinched": false,
+    "pinchRatio": 1.02,
+    "hand": false,
+    "gesture": "thrown",
+    "delegate": "GPU",
+    "fps": 6.7,
+    "lat": 204,
+    "ball": {
+      "x": 0.084,
+      "y": 0.472,
+      "z": -0.761
+    },
+    "lastThrow": {
+      "source": "touch",
+      "rawSpeed": 3.28,
+      "assistCup": "far8",
+      "sUp": 2.34,
+      "vxImg": -0.17,
+      "speed": 3.79,
+      "v": {
+        "x": 0.05,
+        "y": 2.68,
+        "z": -2.68
+      },
+      "from": {
+        "x": 0.015291262135922322,
+        "y": 0.6428837209302325,
+        "z": 1.0785581395348836
+      }
+    },
+    "errors": []
+  },
+  "console": [
+    "[log] I1122 07:39:45.375000 2210688 gl_context.cc:408] GL version: 3.0 (OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))), renderer: WebKit WebGL",
+    "[warn] W1122 07:39:45.376999 2210688 gl_context.cc:1136] OpenGL error checking is disabled",
+    "[log] Graph successfully started running.",
+    "[warn] W1122 07:39:47.292000 2210688 landmark_projection_calculator.cc:81] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX."
+  ]
+}
