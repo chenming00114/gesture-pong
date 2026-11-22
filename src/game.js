@@ -23,7 +23,7 @@ export function createGame() {
     score: { player: 0, ai: 0 },
     ball: { x: 0, z: 0, vx: 0, vz: 0, px: 0, pz: 0 },
     player: { z: 0, pz: 0, target: 0 },
-    ai: { z: 0, pz: 0, maxSpeed: 6.5, err: 0 },
+    ai: { z: 0, pz: 0, maxSpeed: 8.5, err: 0 },
     timer: 0, hits: 0, lastScorer: null, events: [],
     speed: START_SPEED,
   };

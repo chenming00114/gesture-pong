@@ -7,7 +7,7 @@ const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 
 // ---------- settings (persisted) ----------
-const DEFAULTS = { source: 'palm', gain: 2.0, dead: 0.02, center: 0.5, minCutoff: 1.5, beta: 8, aiSpeed: 6.5, invert: false, shadows: true };
+const DEFAULTS = { source: 'palm', gain: 2.0, dead: 0.02, center: 0.5, minCutoff: 1.5, beta: 8, aiSpeed: 8.5, invert: false, shadows: true };
 const cfg = Object.assign({}, DEFAULTS, JSON.parse(localStorage.getItem('gp-cfg') || '{}'));
 const save = () => localStorage.setItem('gp-cfg', JSON.stringify(cfg));
 

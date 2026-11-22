@@ -26,9 +26,12 @@ const t0 = Date.now();
 await new Promise((r) => setTimeout(r, 2500));
 await page.screenshot({ path: `${out}/${prefix}-1-tracking.png` });
 // sample paddle/hand positions for ~8 s
-const samples = [];
+const samples = []; let shotUp = false, shotDown = false;
 for (let i = 0; i < 40; i++) {
   samples.push(await page.evaluate(() => { const T = window.__pong; return { t: Math.round(performance.now()), hand: T.handVisible, rawY: T.rawY && +T.rawY.toFixed(3), filtY: T.filtY && +T.filtY.toFixed(3), paddleZ: +T.game.player.z.toFixed(3), gesture: T.gesture, state: T.game.state, ballX: +T.game.ball.x.toFixed(2), fps: +T.fps.toFixed(1), lat: T.latencyMs && +T.latencyMs.toFixed(1) }; }));
+  const s = samples[samples.length - 1];
+  if (s.hand && s.paddleZ < -1.5 && !shotUp) { shotUp = true; await page.screenshot({ path: `${out}/${prefix}-hand-up.png` }); }
+  if (s.hand && s.paddleZ > 3 && !shotDown) { shotDown = true; await page.screenshot({ path: `${out}/${prefix}-hand-down.png` }); }
   if (i === 20) await page.screenshot({ path: `${out}/${prefix}-2-gameplay.png` });
   await new Promise((r) => setTimeout(r, 200));
 }
