@@ -1,0 +1,25 @@
+{
+  "name": "gesture-pong",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "node scripts/copy-wasm.mjs",
+    "dev": "vite --host",
+    "build": "node scripts/copy-wasm.mjs && vite build",
+    "preview": "vite preview --host",
+    "test": "node scripts/headless-test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.2.3",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.18.1",
+    "vite": "^8.3.8"
+  },
+  "private": true
+}
