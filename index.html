@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>if (/[?&]mode=pong\b/.test(location.search)) location.replace('pong.html' + location.search);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#120c18" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M3 4h10l-2 10H5z%22 fill=%22%23d8232a%22/%3E%3C/svg%3E" />
+  <title>Gesture Beer Pong 3D</title>
+  <script type="module" crossorigin src="./assets/main-DE95sZj0.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/tracking-BJU8waPF.js">
+  <link rel="modulepreload" crossorigin href="./assets/three.module-CTp6JrcA.js">
+  <link rel="modulepreload" crossorigin href="./assets/physics-C_uKcQlS.js">
+  <link rel="stylesheet" crossorigin href="./assets/three-CY6M2oOL.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-BhuIlt2c.css">
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <div id="hud">
+    <div id="cupbar"><span class="opp">AI cups <b id="cupsOpp">10</b></span><span id="balls">●●</span><span class="mine">Your cups <b id="cupsMine">10</b></span></div>
+    <div id="stats"><span id="fps">-- fps</span><span id="lat">trk -- ms</span><span id="gest">—</span></div>
+    <div id="handLost" class="hidden">✋ HAND LOST</div>
+    <div id="msg"></div>
+  </div>
+  <div id="previewWrap">
+    <div id="preview"><video id="video" playsinline muted autoplay></video><canvas id="overlay"></canvas></div>
+    <div id="pinchBadge">—</div>
+  </div>
+  <button id="gear" aria-label="settings">⚙</button>
+  <div id="settings" class="hidden">
+    <h3>Tuning</h3>
+    <label>Throw power <output></output><input id="optPower" type="range" min="0.5" max="2" step="0.05" /></label>
+    <label>Aim sensitivity (left/right) <output></output><input id="optAim" type="range" min="0.3" max="2.5" step="0.05" /></label>
+    <label>Throw assist <output></output><input id="optAssist" type="range" min="0" max="1" step="0.05" /></label>
+    <label>Arc angle <output></output><input id="optArc" type="range" min="30" max="65" step="1" /></label>
+    <label>Smoothing minCutoff <output></output><input id="optMin" type="range" min="0.2" max="6" step="0.1" /></label>
+    <label>Smoothing beta <output></output><input id="optBeta" type="range" min="0" max="40" step="0.5" /></label>
+    <label>Pinch threshold <output></output><input id="optPinch" type="range" min="0.15" max="0.45" step="0.01" /></label>
+    <label>AI accuracy <output></output><input id="optAI" type="range" min="0" max="1" step="0.05" /></label>
+    <label><input id="optHint" type="checkbox" /> Aim hint</label>
+    <label><input id="optShadows" type="checkbox" /> Shadows</label>
+    <div class="row"><button id="btnRecenter">Recenter on hand</button><button id="btnRerack">Re-rack</button></div>
+    <div class="row"><button id="btnReset">Reset settings</button><button id="btnClose">Close</button></div>
+    <p class="small"><a href="tester.html" style="color:#7aff9c">Gesture Tester & Coach →</a> · <a href="pong.html" style="color:#9cf">Classic Pong →</a></p>
+  </div>
+  <div id="start">
+    <h1>Gesture Beer Pong 3D</h1>
+    <p><b>Pinch</b> 🤏 to grab the ball, <b>pull your hand down</b> to wind up,<br/>then <b>flick up</b> and <b>let go</b> to throw.<br/>Move left/right to aim. 2 balls per turn.<br/>No camera? Press, drag down, flick up on the screen.</p>
+    <button id="btnStart">Tap to start</button>
+    <p id="loadStatus" class="small"></p>
+  </div>
+</body>
+</html>

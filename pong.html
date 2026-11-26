@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%226%22 fill=%22%235cf2ff%22/%3E%3C/svg%3E" />
+  <title>Gesture Pong 3D (classic)</title>
+  <script type="module" crossorigin src="./assets/pong-Dx9_hZtr.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/tracking-BJU8waPF.js">
+  <link rel="modulepreload" crossorigin href="./assets/three.module-CTp6JrcA.js">
+  <link rel="stylesheet" crossorigin href="./assets/three-CY6M2oOL.css">
+</head>
+<body>
+  <canvas id="scene"></canvas>
+
+  <div id="hud">
+    <div id="score"><span id="sPlayer">0</span><span class="sep">:</span><span id="sAI">0</span></div>
+    <div id="stats">
+      <span id="fps">-- fps</span>
+      <span id="lat">trk -- ms</span>
+      <span id="gest">—</span>
+    </div>
+    <div id="handLost" class="hidden">✋ HAND LOST</div>
+    <div id="msg"></div>
+  </div>
+
+  <div id="preview">
+    <video id="video" playsinline muted autoplay></video>
+    <canvas id="overlay"></canvas>
+  </div>
+
+  <button id="gear" aria-label="settings">⚙</button>
+  <div id="settings" class="hidden">
+    <h3>Tuning</h3>
+    <label>Hand point
+      <select id="optSource"><option value="palm">Palm center</option><option value="index">Index fingertip</option></select>
+    </label>
+    <label>Gain <output id="vGain"></output><input id="optGain" type="range" min="1" max="4" step="0.1" /></label>
+    <label>Dead zone <output id="vDead"></output><input id="optDead" type="range" min="0" max="0.1" step="0.005" /></label>
+    <label>Center (hand y) <output id="vCenter"></output><input id="optCenter" type="range" min="0.2" max="0.8" step="0.01" /></label>
+    <label>Filter minCutoff <output id="vMin"></output><input id="optMin" type="range" min="0.1" max="5" step="0.1" /></label>
+    <label>Filter beta <output id="vBeta"></output><input id="optBeta" type="range" min="0" max="30" step="0.5" /></label>
+    <label>AI max speed <output id="vAI"></output><input id="optAI" type="range" min="2" max="14" step="0.5" /></label>
+    <label><input id="optInvert" type="checkbox" /> Invert up/down</label>
+    <label><input id="optShadows" type="checkbox" /> Shadows</label>
+    <div class="row"><button id="btnRecenter">Recenter on hand</button><button id="btnReset">Reset</button><button id="btnClose">Close</button></div>
+  </div>
+
+  <div id="start">
+    <h1>Gesture Pong 3D</h1>
+    <p>Move your hand <b>up/down</b> to steer.<br/>Serve: <b>open palm</b> or <b>pinch</b>.<br/>Hold a <b>fist</b> ½ s to pause.<br/>No camera? Drag on the table.</p>
+    <button id="btnStart">Tap to start</button>
+    <p id="loadStatus" class="small"></p>
+  </div>
+
+</body>
+</html>
