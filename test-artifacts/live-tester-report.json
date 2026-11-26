@@ -1,0 +1,197 @@
+{
+  "url": "https://chenming00114.github.io/gesture-pong/tester.html",
+  "y4m": "none",
+  "sequences": {
+    "arcValid": {
+      "seqId": "arc",
+      "phasesSeen": [
+        "IDLE",
+        "GRAB",
+        "WINDUP",
+        "FLICK",
+        "RELEASE"
+      ],
+      "throws": [
+        {
+          "id": 1795661341423.4226,
+          "seqId": "arc",
+          "seqName": "Arc Snap (Recommended)",
+          "trigger": "pinch-open",
+          "valid": true,
+          "reason": "Crisp release near peak velocity",
+          "peakSpeed": 2.9,
+          "dtPeakMs": 66,
+          "direction": "up + forward + right",
+          "windupReached": true,
+          "holdDurationMs": 561,
+          "speedMs": 4.21,
+          "vxWorld": 0.11,
+          "aimDir": "center",
+          "simResult": "Table sim: floor",
+          "tRel": 4.852400000002235
+        }
+      ]
+    },
+    "dartValid": {
+      "seqId": "dart",
+      "phasesSeen": [
+        "IDLE",
+        "GRAB",
+        "COCK",
+        "PUSH",
+        "RELEASE"
+      ],
+      "throws": [
+        {
+          "id": 1795661341465.6729,
+          "seqId": "dart",
+          "seqName": "Dart Push (Depth + Wrist)",
+          "trigger": "pinch-open",
+          "valid": true,
+          "reason": "Crisp release near peak velocity",
+          "peakSpeed": 2.06,
+          "dtPeakMs": 99,
+          "direction": "up + forward + right",
+          "windupReached": true,
+          "holdDurationMs": 561,
+          "speedMs": 5.53,
+          "vxWorld": 0.11,
+          "aimDir": "center",
+          "simResult": "Table sim: floor",
+          "tRel": 4.896800000000745
+        }
+      ]
+    },
+    "underValid": {
+      "seqId": "underhand",
+      "phasesSeen": [
+        "IDLE",
+        "GRAB",
+        "PULLBACK",
+        "FLICK",
+        "RELEASE"
+      ],
+      "throws": [
+        {
+          "id": 1795661341474.8804,
+          "seqId": "underhand",
+          "seqName": "Current Game (Underhand)",
+          "trigger": "pinch-open",
+          "valid": true,
+          "reason": "Crisp release near peak velocity",
+          "peakSpeed": 2.51,
+          "dtPeakMs": 66,
+          "direction": "up",
+          "windupReached": true,
+          "holdDurationMs": 561,
+          "speedMs": 3.64,
+          "vxWorld": 0.06,
+          "aimDir": "center",
+          "simResult": "Table sim: floor",
+          "tRel": 4.906300000000745
+        }
+      ]
+    },
+    "arcLate": {
+      "seqId": "arc",
+      "phasesSeen": [
+        "IDLE",
+        "GRAB",
+        "WINDUP",
+        "FLICK",
+        "RELEASE"
+      ],
+      "throws": [
+        {
+          "id": 1795661341483.6938,
+          "seqId": "arc",
+          "seqName": "Arc Snap (Recommended)",
+          "trigger": "pinch-open",
+          "valid": false,
+          "reason": "Released too late (+396 ms after peak — hand already stopped)",
+          "peakSpeed": 2.91,
+          "dtPeakMs": 396,
+          "direction": "up + forward + right",
+          "windupReached": true,
+          "holdDurationMs": 891,
+          "speedMs": 4.21,
+          "vxWorld": 0.11,
+          "aimDir": "center",
+          "simResult": "Table sim: floor",
+          "tRel": 5.244300000000745
+        }
+      ]
+    },
+    "arcSoft": {
+      "seqId": "arc",
+      "phasesSeen": [
+        "IDLE",
+        "GRAB",
+        "WINDUP",
+        "RELEASE"
+      ],
+      "throws": [
+        {
+          "id": 1795661341491.5234,
+          "seqId": "arc",
+          "seqName": "Arc Snap (Recommended)",
+          "trigger": "pinch-open",
+          "valid": false,
+          "reason": "Flick too soft (0.19 < 0.75)",
+          "peakSpeed": 0.19,
+          "dtPeakMs": 66,
+          "direction": "still",
+          "windupReached": true,
+          "holdDurationMs": 726,
+          "speedMs": 1.2,
+          "vxWorld": 0.04,
+          "aimDir": "center",
+          "simResult": "Table sim: stopped",
+          "tRel": 5.0885
+        }
+      ]
+    },
+    "arcFinal": {
+      "seqId": "arc",
+      "phasesSeen": [
+        "IDLE",
+        "GRAB",
+        "WINDUP",
+        "FLICK",
+        "RELEASE"
+      ],
+      "throws": [
+        {
+          "id": 1795661341501.0442,
+          "seqId": "arc",
+          "seqName": "Arc Snap (Recommended)",
+          "trigger": "pinch-open",
+          "valid": true,
+          "reason": "Crisp release near peak velocity",
+          "peakSpeed": 2.9,
+          "dtPeakMs": 66,
+          "direction": "up + forward + right",
+          "windupReached": true,
+          "holdDurationMs": 561,
+          "speedMs": 4.21,
+          "vxWorld": 0.11,
+          "aimDir": "center",
+          "simResult": "Table sim: floor",
+          "tRel": 4.935400000002235
+        }
+      ]
+    },
+    "traceCheck": {
+      "frameCount": 33,
+      "throwsInTrace": 1,
+      "hasLandmarks": true
+    }
+  },
+  "errors": [],
+  "console": [
+    "[log] I1126 02:48:59.551000 2210688 gl_context.cc:408] GL version: 3.0 (OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))), renderer: WebKit WebGL",
+    "[warn] W1126 02:48:59.552000 2210688 gl_context.cc:1136] OpenGL error checking is disabled",
+    "[log] Graph successfully started running.",
+    "[warn] W1126 02:49:01.399000 2210688 landmark_projection_calculator.cc:81] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX."
+  ]
+}

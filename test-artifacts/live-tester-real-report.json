@@ -1,0 +1,17 @@
+{
+  "url": "https://chenming00114.github.io/gesture-pong/tester.html",
+  "y4m": "test-video/six7_righthand.y4m",
+  "realVideo": {
+    "samplesCount": 24,
+    "detectedFrames": 14,
+    "falseThrows": 0,
+    "minPinch": 1.140745736169436
+  },
+  "errors": [],
+  "console": [
+    "[log] I1126 02:49:03.556000 2210688 gl_context.cc:408] GL version: 3.0 (OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))), renderer: WebKit WebGL",
+    "[warn] W1126 02:49:03.556999 2210688 gl_context.cc:1136] OpenGL error checking is disabled",
+    "[log] Graph successfully started running.",
+    "[warn] W1126 02:49:05.456000 2210688 landmark_projection_calculator.cc:81] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX."
+  ]
+}
