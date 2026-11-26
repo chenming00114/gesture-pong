@@ -1,0 +1,19 @@
+{
+  "url": "http://localhost:4173/tester.html",
+  "y4m": "test-video/six7_righthand.y4m",
+  "realVideo": {
+    "samplesCount": 24,
+    "detectedFrames": 14,
+    "falseThrows": 0,
+    "minPinch": 1.1729126910880998
+  },
+  "errors": [],
+  "console": [
+    "[http 404] http://localhost:4173/favicon.ico",
+    "[error] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[log] I1126 02:47:28.176000 2210688 gl_context.cc:408] GL version: 3.0 (OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))), renderer: WebKit WebGL",
+    "[warn] W1126 02:47:28.176999 2210688 gl_context.cc:1136] OpenGL error checking is disabled",
+    "[log] Graph successfully started running.",
+    "[warn] W1126 02:47:30.052999 2210688 landmark_projection_calculator.cc:81] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX."
+  ]
+}

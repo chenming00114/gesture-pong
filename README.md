@@ -3,6 +3,7 @@
 Hand-gesture games for phones (Chrome on Android first). Live: https://chenming00114.github.io/gesture-pong/
 
 - **Beer pong (default, `index.html`)**: **pinch** (thumb tip to index tip) to grab the ball, **pull your hand down** to wind up, **flick up and let go** to throw. Your hand's left/right position (and sideways flick) aims. 2 balls per turn, then the AI throws at your cups. Clear all 10 cups to win.
+- **Gesture Tester & Throw Coach**: `tester.html` (live rolling graphs, state machine, throw grading, JSON trace export)
 - **Classic paddle Pong**: `pong.html` or `?mode=pong` (git tag `pong-v1` is the original build).
 
 ## How the throw works

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0e19" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%226%22 fill=%22%235cf2ff%22/%3E%3C/svg%3E" />
+  <title>Beer Pong Gesture Tester</title>
+  <link rel="stylesheet" href="./src/tester/tester.css" />
+</head>
+<body>
+  <header>
+    <h1>Gesture Tester &amp; Throw Coach</h1>
+    <div class="links"><a href="./">← Back to Beer Pong</a><a href="pong.html">Classic Pong</a></div>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="camBox">
+        <video id="video" playsinline muted autoplay></video>
+        <canvas id="overlay"></canvas>
+      </div>
+      <div class="camHud">
+        <span id="camStatus">Tap Start Camera to begin</span>
+        <span id="camStats">—</span>
+      </div>
+      <div id="coach" class="coach">Tap Start Camera, then pinch &amp; toss</div>
+      <div class="controls">
+        <button id="btnStart" class="btn primary">Start Camera</button>
+        <button id="btnRec" class="btn">⏺ Record Session</button>
+        <button id="btnDownload" class="btn">⬇ Download Trace JSON</button>
+        <button id="btnDemo" class="btn">▶ Demo Throw</button>
+        <button id="btnClear" class="btn">Clear</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div id="seqTabs" class="tabs"></div>
+      <p id="seqDesc" class="seqDesc"></p>
+      <div id="phaseSteps" class="steps"></div>
+
+      <div class="readouts">
+        <div><b>Pinch (2f / 3f)</b><span id="rPinch">—</span></div>
+        <div><b>Hand X, Y</b><span id="rXY">—</span></div>
+        <div><b>Hand Size (depth)</b><span id="rSize">—</span></div>
+        <div><b>Wrist Flex</b><span id="rWrist">—</span></div>
+        <div><b>Vel (up / x)</b><span id="rVel">—</span></div>
+        <div><b>Drive / Min</b><span id="rDrive">—</span></div>
+      </div>
+
+      <canvas id="graphs"></canvas>
+    </section>
+
+    <section class="card">
+      <h3 style="margin:0 0 8px;font-size:15px;">Detected Throws</h3>
+      <div id="throwsList" class="throws"></div>
+    </section>
+
+    <section class="card howto">
+      <h3>How to Throw (Recommended: Arc Snap)</h3>
+      <ol>
+        <li><b>Grip (Grab):</b> Touch your thumb tip to your index fingertip (or thumb + index + middle like holding a dart) in front of the camera so the green line lights up.</li>
+        <li><b>Wind up (Cock):</b> Keep pinching and pull your hand back/down slightly toward your chest or raise it to eye level with your wrist cocked back.</li>
+        <li><b>Snap (Flick):</b> Swing smoothly from your elbow and snap your forearm/wrist <b>up and slightly forward</b> toward the phone in a soft 45° arc.</li>
+        <li><b>Release:</b> Open your fingers <b>while your hand is still snapping upward/forward</b> — not after your hand stops at the top.</li>
+      </ol>
+      <p><b>Why this matches real beer pong:</b> Real players throw a soft arc rather than a flat fastball so the ball drops steeply into the cup opening instead of bouncing off the rim. The elbow stays steady as the pivot while the forearm and wrist create a repeatable lob.</p>
+      <p class="small">Record a few throws and hit <b>Download Trace JSON</b> to share your real phone landmarks for tuning.</p>
+    </section>
+  </main>
+
+  <script type="module" src="./src/tester/main.js"></script>
+</body>
+</html>
